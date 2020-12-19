@@ -16,7 +16,6 @@
     <!-- adjustViewBounds for deleting space-->
 
     <TextView
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bloodshot"
@@ -46,7 +45,6 @@
         android:layout_marginStart="16dp"
         android:textSize="16sp"
         android:textColor="@android:color/black"
-
         />
 
     <LinearLayout
@@ -58,8 +56,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-
         >
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
