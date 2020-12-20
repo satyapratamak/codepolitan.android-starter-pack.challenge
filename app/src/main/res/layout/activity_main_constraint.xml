@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewPoster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/poster_bloodshot"
+        tools:layout_editor_absoluteX="39dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bloodshot"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="@id/imageViewPoster"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewPoster"
+        />
+
+    <TextView
+        android:id="@+id/textViewOverview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imageViewPoster"
+        android:layout_margin="16dp"
+        android:text="After he and his wife are murdered, marine Ray Garrison is resurrected by a team of scientists. Enhanced with nanotechnology, he becomes a superhuman, biotech killing machine—‘Bloodshot’. As Ray first trains with fellow super-soldiers, he cannot recall anything from his former life. But when his memories flood back and he remembers the man that killed both him and his wife, he breaks out of the facility to get revenge, only to discover that there’s more to the conspiracy than he thought."
+        />
+
+    <TextView
+        android:id="@+id/textViewCastCrew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cast &amp; Crew"
+        app:layout_constraintTop_toBottomOf="@id/textViewOverview"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="16dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/textViewDirector"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:text="Director"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toStartOf="@id/textViewDaveWilson"
+        app:layout_constraintHorizontal_weight="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewCastCrew" />
+
+    <TextView
+        android:id="@+id/textViewDaveWilson"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Dave Wilson"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewDirector"
+        app:layout_constraintTop_toTopOf="@id/textViewDirector"/>
+
+    <TextView
+        android:id="@+id/textViewCast"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cast"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_weight="0.3"
+        app:layout_constraintEnd_toStartOf="@id/textViewPlayer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewDirector"/>
+
+    <TextView
+        android:id="@+id/textViewPlayer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Vin Diesel, Eiza Gonzalez, Sam Heughan, Toby Kebbel"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewCast"
+        app:layout_constraintTop_toTopOf="@id/textViewCast"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@android:color/darker_gray"
+        android:text="Rent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
